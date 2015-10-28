@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5433F9811BDE5F51006FFE07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5433F9801BDE5F51006FFE07 /* main.m */; };
+		5433F9841BDE5F51006FFE07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5433F9831BDE5F51006FFE07 /* AppDelegate.m */; };
+		5433F98C1BDE5F51006FFE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5433F98B1BDE5F51006FFE07 /* Assets.xcassets */; };
+		5433F98F1BDE5F51006FFE07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5433F98D1BDE5F51006FFE07 /* LaunchScreen.storyboard */; };
+		5433F99A1BDE5F51006FFE07 /* XMSampleMPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5433F9991BDE5F51006FFE07 /* XMSampleMPTests.m */; };
+		5433F9A51BDE5FCA006FFE07 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5433F9A41BDE5FCA006FFE07 /* AVFoundation.framework */; };
+		5433F9A71BDE5FD2006FFE07 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5433F9A61BDE5FD2006FFE07 /* MediaPlayer.framework */; };
+		5433F9AF1BDEE847006FFE07 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9AC1BDEE847006FFE07 /* launch.png */; settings = {ASSET_TAGS = (); }; };
+		5433F9B01BDEE847006FFE07 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9AD1BDEE847006FFE07 /* Icon-60@3x.png */; settings = {ASSET_TAGS = (); }; };
+		5433F9B11BDEE847006FFE07 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9AE1BDEE847006FFE07 /* Icon-60@2x.png */; settings = {ASSET_TAGS = (); }; };
+		5433F9B91BDF5F8F006FFE07 /* XMSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 5433F9B81BDF5F8F006FFE07 /* XMSong.m */; settings = {ASSET_TAGS = (); }; };
+		5433F9C01BDF668A006FFE07 /* XMSongListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5433F9BE1BDF668A006FFE07 /* XMSongListViewController.m */; settings = {ASSET_TAGS = (); }; };
+		5433F9C11BDF668A006FFE07 /* XMSongListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9BF1BDF668A006FFE07 /* XMSongListViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		5433F9C31BDF6B0E006FFE07 /* NotReadyToMakeNice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9C21BDF6B0E006FFE07 /* NotReadyToMakeNice.mp3 */; settings = {ASSET_TAGS = (); }; };
+		5433F9C71BDF6DDA006FFE07 /* AlbumCover.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9C61BDF6DDA006FFE07 /* AlbumCover.png */; settings = {ASSET_TAGS = (); }; };
+		5433F9CB1BDF7238006FFE07 /* XMSongPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5433F9C91BDF7238006FFE07 /* XMSongPlayerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		5433F9CC1BDF7238006FFE07 /* XMSongPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9CA1BDF7238006FFE07 /* XMSongPlayerViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		5433F9D31BDF757E006FFE07 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9CD1BDF757E006FFE07 /* pause.png */; settings = {ASSET_TAGS = (); }; };
+		5433F9D41BDF757E006FFE07 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9CE1BDF757E006FFE07 /* play.png */; settings = {ASSET_TAGS = (); }; };
+		5433F9D51BDF757E006FFE07 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9CF1BDF757E006FFE07 /* next.png */; settings = {ASSET_TAGS = (); }; };
+		5433F9D61BDF757E006FFE07 /* previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9D01BDF757E006FFE07 /* previous.png */; settings = {ASSET_TAGS = (); }; };
+		5433F9D71BDF757E006FFE07 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9D11BDF757E006FFE07 /* forward.png */; settings = {ASSET_TAGS = (); }; };
+		5433F9D81BDF757E006FFE07 /* backward.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9D21BDF757E006FFE07 /* backward.png */; settings = {ASSET_TAGS = (); }; };
+		5433F9E41BDF9B42006FFE07 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9E21BDF9B42006FFE07 /* list.png */; settings = {ASSET_TAGS = (); }; };
+		5433F9E71BDF9D9C006FFE07 /* mysong.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433F9E61BDF9D9C006FFE07 /* mysong.png */; settings = {ASSET_TAGS = (); }; };
+		5433FA301BE0731E006FFE07 /* XMPlayerSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5433FA2F1BE0731E006FFE07 /* XMPlayerSlider.m */; settings = {ASSET_TAGS = (); }; };
+		5433FA321BE08FAE006FFE07 /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433FA311BE08FAE006FFE07 /* empty.png */; settings = {ASSET_TAGS = (); }; };
+		5433FA341BE0A03E006FFE07 /* lyric in Resources */ = {isa = PBXBuildFile; fileRef = 5433FA331BE0A03E006FFE07 /* lyric */; settings = {ASSET_TAGS = (); }; };
+		5433FA361BE0DE67006FFE07 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5433FA351BE0DE67006FFE07 /* Icon.png */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5433F9961BDE5F51006FFE07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5433F9741BDE5F51006FFE07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5433F97B1BDE5F51006FFE07;
+			remoteInfo = XMSampleMP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5433F97C1BDE5F51006FFE07 /* XMSampleMP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMSampleMP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5433F9801BDE5F51006FFE07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5433F9821BDE5F51006FFE07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5433F9831BDE5F51006FFE07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5433F98B1BDE5F51006FFE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5433F98E1BDE5F51006FFE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5433F9901BDE5F51006FFE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5433F9951BDE5F51006FFE07 /* XMSampleMPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMSampleMPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5433F9991BDE5F51006FFE07 /* XMSampleMPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMSampleMPTests.m; sourceTree = "<group>"; };
+		5433F99B1BDE5F51006FFE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5433F9A41BDE5FCA006FFE07 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5433F9A61BDE5FD2006FFE07 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		5433F9AC1BDEE847006FFE07 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		5433F9AD1BDEE847006FFE07 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		5433F9AE1BDEE847006FFE07 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		5433F9B71BDF5F8F006FFE07 /* XMSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSong.h; sourceTree = "<group>"; };
+		5433F9B81BDF5F8F006FFE07 /* XMSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMSong.m; sourceTree = "<group>"; };
+		5433F9BD1BDF668A006FFE07 /* XMSongListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSongListViewController.h; sourceTree = "<group>"; };
+		5433F9BE1BDF668A006FFE07 /* XMSongListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMSongListViewController.m; sourceTree = "<group>"; };
+		5433F9BF1BDF668A006FFE07 /* XMSongListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMSongListViewController.xib; sourceTree = "<group>"; };
+		5433F9C21BDF6B0E006FFE07 /* NotReadyToMakeNice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = NotReadyToMakeNice.mp3; sourceTree = "<group>"; };
+		5433F9C61BDF6DDA006FFE07 /* AlbumCover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlbumCover.png; sourceTree = "<group>"; };
+		5433F9C81BDF7238006FFE07 /* XMSongPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSongPlayerViewController.h; sourceTree = "<group>"; };
+		5433F9C91BDF7238006FFE07 /* XMSongPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMSongPlayerViewController.m; sourceTree = "<group>"; };
+		5433F9CA1BDF7238006FFE07 /* XMSongPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMSongPlayerViewController.xib; sourceTree = "<group>"; };
+		5433F9CD1BDF757E006FFE07 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		5433F9CE1BDF757E006FFE07 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		5433F9CF1BDF757E006FFE07 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		5433F9D01BDF757E006FFE07 /* previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = previous.png; sourceTree = "<group>"; };
+		5433F9D11BDF757E006FFE07 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
+		5433F9D21BDF757E006FFE07 /* backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backward.png; sourceTree = "<group>"; };
+		5433F9E21BDF9B42006FFE07 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		5433F9E61BDF9D9C006FFE07 /* mysong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mysong.png; sourceTree = "<group>"; };
+		5433FA2E1BE0731E006FFE07 /* XMPlayerSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPlayerSlider.h; sourceTree = "<group>"; };
+		5433FA2F1BE0731E006FFE07 /* XMPlayerSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPlayerSlider.m; sourceTree = "<group>"; };
+		5433FA311BE08FAE006FFE07 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
+		5433FA331BE0A03E006FFE07 /* lyric */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lyric; sourceTree = "<group>"; };
+		5433FA351BE0DE67006FFE07 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5433F9791BDE5F51006FFE07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5433F9A71BDE5FD2006FFE07 /* MediaPlayer.framework in Frameworks */,
+				5433F9A51BDE5FCA006FFE07 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5433F9921BDE5F51006FFE07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5433F9731BDE5F51006FFE07 = {
+			isa = PBXGroup;
+			children = (
+				5433F97E1BDE5F51006FFE07 /* XMSampleMP */,
+				5433F9981BDE5F51006FFE07 /* XMSampleMPTests */,
+				5433F97D1BDE5F51006FFE07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5433F97D1BDE5F51006FFE07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5433F97C1BDE5F51006FFE07 /* XMSampleMP.app */,
+				5433F9951BDE5F51006FFE07 /* XMSampleMPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5433F97E1BDE5F51006FFE07 /* XMSampleMP */ = {
+			isa = PBXGroup;
+			children = (
+				5433F9BC1BDF642F006FFE07 /* XMSongPlayer */,
+				5433F9BB1BDF6422006FFE07 /* XMSongList */,
+				5433F9BA1BDF5F9B006FFE07 /* XMSong */,
+				5433F9821BDE5F51006FFE07 /* AppDelegate.h */,
+				5433F9831BDE5F51006FFE07 /* AppDelegate.m */,
+				5433F98B1BDE5F51006FFE07 /* Assets.xcassets */,
+				5433F98D1BDE5F51006FFE07 /* LaunchScreen.storyboard */,
+				5433F9901BDE5F51006FFE07 /* Info.plist */,
+				5433F97F1BDE5F51006FFE07 /* Supporting Files */,
+			);
+			path = XMSampleMP;
+			sourceTree = "<group>";
+		};
+		5433F97F1BDE5F51006FFE07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5433F9A61BDE5FD2006FFE07 /* MediaPlayer.framework */,
+				5433F9A41BDE5FCA006FFE07 /* AVFoundation.framework */,
+				5433FA351BE0DE67006FFE07 /* Icon.png */,
+				5433F9AC1BDEE847006FFE07 /* launch.png */,
+				5433FA311BE08FAE006FFE07 /* empty.png */,
+				5433F9E21BDF9B42006FFE07 /* list.png */,
+				5433F9E61BDF9D9C006FFE07 /* mysong.png */,
+				5433F9CD1BDF757E006FFE07 /* pause.png */,
+				5433F9CE1BDF757E006FFE07 /* play.png */,
+				5433F9CF1BDF757E006FFE07 /* next.png */,
+				5433F9D01BDF757E006FFE07 /* previous.png */,
+				5433F9D11BDF757E006FFE07 /* forward.png */,
+				5433F9D21BDF757E006FFE07 /* backward.png */,
+				5433F9C61BDF6DDA006FFE07 /* AlbumCover.png */,
+				5433F9C21BDF6B0E006FFE07 /* NotReadyToMakeNice.mp3 */,
+				5433F9AD1BDEE847006FFE07 /* Icon-60@3x.png */,
+				5433F9AE1BDEE847006FFE07 /* Icon-60@2x.png */,
+				5433F9801BDE5F51006FFE07 /* main.m */,
+				5433FA331BE0A03E006FFE07 /* lyric */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5433F9981BDE5F51006FFE07 /* XMSampleMPTests */ = {
+			isa = PBXGroup;
+			children = (
+				5433F9991BDE5F51006FFE07 /* XMSampleMPTests.m */,
+				5433F99B1BDE5F51006FFE07 /* Info.plist */,
+			);
+			path = XMSampleMPTests;
+			sourceTree = "<group>";
+		};
+		5433F9BA1BDF5F9B006FFE07 /* XMSong */ = {
+			isa = PBXGroup;
+			children = (
+				5433F9B71BDF5F8F006FFE07 /* XMSong.h */,
+				5433F9B81BDF5F8F006FFE07 /* XMSong.m */,
+			);
+			name = XMSong;
+			sourceTree = "<group>";
+		};
+		5433F9BB1BDF6422006FFE07 /* XMSongList */ = {
+			isa = PBXGroup;
+			children = (
+				5433F9BD1BDF668A006FFE07 /* XMSongListViewController.h */,
+				5433F9BE1BDF668A006FFE07 /* XMSongListViewController.m */,
+				5433F9BF1BDF668A006FFE07 /* XMSongListViewController.xib */,
+			);
+			name = XMSongList;
+			sourceTree = "<group>";
+		};
+		5433F9BC1BDF642F006FFE07 /* XMSongPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				5433FA2E1BE0731E006FFE07 /* XMPlayerSlider.h */,
+				5433FA2F1BE0731E006FFE07 /* XMPlayerSlider.m */,
+				5433F9C81BDF7238006FFE07 /* XMSongPlayerViewController.h */,
+				5433F9C91BDF7238006FFE07 /* XMSongPlayerViewController.m */,
+				5433F9CA1BDF7238006FFE07 /* XMSongPlayerViewController.xib */,
+			);
+			name = XMSongPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5433F97B1BDE5F51006FFE07 /* XMSampleMP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5433F99E1BDE5F51006FFE07 /* Build configuration list for PBXNativeTarget "XMSampleMP" */;
+			buildPhases = (
+				5433F9781BDE5F51006FFE07 /* Sources */,
+				5433F9791BDE5F51006FFE07 /* Frameworks */,
+				5433F97A1BDE5F51006FFE07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMSampleMP;
+			productName = XMSampleMP;
+			productReference = 5433F97C1BDE5F51006FFE07 /* XMSampleMP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5433F9941BDE5F51006FFE07 /* XMSampleMPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5433F9A11BDE5F51006FFE07 /* Build configuration list for PBXNativeTarget "XMSampleMPTests" */;
+			buildPhases = (
+				5433F9911BDE5F51006FFE07 /* Sources */,
+				5433F9921BDE5F51006FFE07 /* Frameworks */,
+				5433F9931BDE5F51006FFE07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5433F9971BDE5F51006FFE07 /* PBXTargetDependency */,
+			);
+			name = XMSampleMPTests;
+			productName = XMSampleMPTests;
+			productReference = 5433F9951BDE5F51006FFE07 /* XMSampleMPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5433F9741BDE5F51006FFE07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = LMC;
+				TargetAttributes = {
+					5433F97B1BDE5F51006FFE07 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					5433F9941BDE5F51006FFE07 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 5433F97B1BDE5F51006FFE07;
+					};
+				};
+			};
+			buildConfigurationList = 5433F9771BDE5F51006FFE07 /* Build configuration list for PBXProject "XMSampleMP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5433F9731BDE5F51006FFE07;
+			productRefGroup = 5433F97D1BDE5F51006FFE07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5433F97B1BDE5F51006FFE07 /* XMSampleMP */,
+				5433F9941BDE5F51006FFE07 /* XMSampleMPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5433F97A1BDE5F51006FFE07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5433FA341BE0A03E006FFE07 /* lyric in Resources */,
+				5433F9AF1BDEE847006FFE07 /* launch.png in Resources */,
+				5433F9C71BDF6DDA006FFE07 /* AlbumCover.png in Resources */,
+				5433F9E41BDF9B42006FFE07 /* list.png in Resources */,
+				5433F9D71BDF757E006FFE07 /* forward.png in Resources */,
+				5433F9D51BDF757E006FFE07 /* next.png in Resources */,
+				5433FA321BE08FAE006FFE07 /* empty.png in Resources */,
+				5433F9D31BDF757E006FFE07 /* pause.png in Resources */,
+				5433F9D61BDF757E006FFE07 /* previous.png in Resources */,
+				5433F9CC1BDF7238006FFE07 /* XMSongPlayerViewController.xib in Resources */,
+				5433F98F1BDE5F51006FFE07 /* LaunchScreen.storyboard in Resources */,
+				5433F9C11BDF668A006FFE07 /* XMSongListViewController.xib in Resources */,
+				5433FA361BE0DE67006FFE07 /* Icon.png in Resources */,
+				5433F9E71BDF9D9C006FFE07 /* mysong.png in Resources */,
+				5433F9D81BDF757E006FFE07 /* backward.png in Resources */,
+				5433F98C1BDE5F51006FFE07 /* Assets.xcassets in Resources */,
+				5433F9D41BDF757E006FFE07 /* play.png in Resources */,
+				5433F9B01BDEE847006FFE07 /* Icon-60@3x.png in Resources */,
+				5433F9B11BDEE847006FFE07 /* Icon-60@2x.png in Resources */,
+				5433F9C31BDF6B0E006FFE07 /* NotReadyToMakeNice.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5433F9931BDE5F51006FFE07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5433F9781BDE5F51006FFE07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5433F9C01BDF668A006FFE07 /* XMSongListViewController.m in Sources */,
+				5433F9CB1BDF7238006FFE07 /* XMSongPlayerViewController.m in Sources */,
+				5433FA301BE0731E006FFE07 /* XMPlayerSlider.m in Sources */,
+				5433F9841BDE5F51006FFE07 /* AppDelegate.m in Sources */,
+				5433F9811BDE5F51006FFE07 /* main.m in Sources */,
+				5433F9B91BDF5F8F006FFE07 /* XMSong.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5433F9911BDE5F51006FFE07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5433F99A1BDE5F51006FFE07 /* XMSampleMPTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5433F9971BDE5F51006FFE07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5433F97B1BDE5F51006FFE07 /* XMSampleMP */;
+			targetProxy = 5433F9961BDE5F51006FFE07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5433F98D1BDE5F51006FFE07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5433F98E1BDE5F51006FFE07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5433F99C1BDE5F51006FFE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5433F99D1BDE5F51006FFE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5433F99F1BDE5F51006FFE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XMSampleMP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jnjttd.XMSampleMP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5433F9A01BDE5F51006FFE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XMSampleMP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jnjttd.XMSampleMP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5433F9A21BDE5F51006FFE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XMSampleMPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jnjttd.XMSampleMPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XMSampleMP.app/XMSampleMP";
+			};
+			name = Debug;
+		};
+		5433F9A31BDE5F51006FFE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XMSampleMPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jnjttd.XMSampleMPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XMSampleMP.app/XMSampleMP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5433F9771BDE5F51006FFE07 /* Build configuration list for PBXProject "XMSampleMP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5433F99C1BDE5F51006FFE07 /* Debug */,
+				5433F99D1BDE5F51006FFE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5433F99E1BDE5F51006FFE07 /* Build configuration list for PBXNativeTarget "XMSampleMP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5433F99F1BDE5F51006FFE07 /* Debug */,
+				5433F9A01BDE5F51006FFE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5433F9A11BDE5F51006FFE07 /* Build configuration list for PBXNativeTarget "XMSampleMPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5433F9A21BDE5F51006FFE07 /* Debug */,
+				5433F9A31BDE5F51006FFE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5433F9741BDE5F51006FFE07 /* Project object */;
+}

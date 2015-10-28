@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMSongPlayerViewController">
+            <connections>
+                <outlet property="btnCtrl" destination="bpf-Wv-9v1" id="hVx-SI-Qe6"/>
+                <outlet property="imgvSongAlbumCover" destination="vHe-mb-xg7" id="uMv-bU-7kf"/>
+                <outlet property="lblLyric" destination="aVy-YQ-Pbv" id="4cf-VD-Cze"/>
+                <outlet property="lblSongAlbum" destination="Ybu-Rb-F1O" id="Z7c-O7-BzE"/>
+                <outlet property="lblSongAuthor" destination="b2c-q7-oYR" id="HYN-TM-AQY"/>
+                <outlet property="lblSongName" destination="IXA-pv-Mts" id="6jC-JA-cvl"/>
+                <outlet property="sliderView" destination="qRa-0U-AVb" id="YGF-rB-LAY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="vHe-mb-xg7">
+                    <rect key="frame" x="12" y="96" width="350" height="350"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vHe-mb-xg7" secondAttribute="height" multiplier="1:1" id="R0q-ru-9bQ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SongName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXA-pv-Mts">
+                    <rect key="frame" x="8" y="5" width="359" height="41"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="PQX-Gd-Dvp"/>
+                        <constraint firstAttribute="width" constant="359" id="Su1-b3-dFo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2c-q7-oYR">
+                    <rect key="frame" x="8" y="46" width="359" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="7ls-pE-zkM"/>
+                        <constraint firstAttribute="width" constant="359" id="fkO-bt-RxS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybu-Rb-F1O">
+                    <rect key="frame" x="8" y="67" width="359" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="dd2-dy-RIB"/>
+                        <constraint firstAttribute="width" constant="359" id="vax-fB-rvl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBv-EC-fCl">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="JEG-jd-7dT"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="V1c-NJ-Eaq"/>
+                        <barButtonItem image="previous.png" width="40" id="QNm-IF-E5Q">
+                            <connections>
+                                <action selector="btnPrevious:" destination="-1" id="wCx-Cf-KRj"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ge8-6i-R05"/>
+                        <barButtonItem image="pause.png" width="40" id="bpf-Wv-9v1">
+                            <connections>
+                                <action selector="btnPlayOrPause:" destination="-1" id="2Nf-6l-KQw"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="q76-As-tOU"/>
+                        <barButtonItem image="next.png" width="40" id="TbL-nA-pYf">
+                            <connections>
+                                <action selector="btnNex:" destination="-1" id="Fap-Va-TCC"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="7kO-hR-RrU"/>
+                    </items>
+                </toolbar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRa-0U-AVb" customClass="XMPlayerSlider">
+                    <rect key="frame" x="12" y="483" width="350" height="15"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="37D-HC-dji"/>
+                        <constraint firstAttribute="width" constant="350" id="RNw-kh-gOM"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lyrics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVy-YQ-Pbv">
+                    <rect key="frame" x="12" y="454" width="350" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="cUI-fx-qHx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aVy-YQ-Pbv" firstAttribute="top" secondItem="vHe-mb-xg7" secondAttribute="bottom" constant="8" id="66W-hf-i4m"/>
+                <constraint firstItem="IXA-pv-Mts" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="7tk-Nz-Dtb"/>
+                <constraint firstItem="uBv-EC-fCl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EsG-vD-G7b"/>
+                <constraint firstAttribute="trailing" secondItem="IXA-pv-Mts" secondAttribute="trailing" constant="8" id="Hd6-nr-Zl2"/>
+                <constraint firstItem="Ybu-Rb-F1O" firstAttribute="centerX" secondItem="b2c-q7-oYR" secondAttribute="centerX" id="MXL-QT-Cvh"/>
+                <constraint firstAttribute="trailing" secondItem="aVy-YQ-Pbv" secondAttribute="trailing" constant="13" id="MdW-bv-RqA"/>
+                <constraint firstItem="IXA-pv-Mts" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="OWg-KV-N3G"/>
+                <constraint firstItem="Ybu-Rb-F1O" firstAttribute="top" secondItem="b2c-q7-oYR" secondAttribute="bottom" id="P3o-Wp-fJs"/>
+                <constraint firstAttribute="bottom" secondItem="uBv-EC-fCl" secondAttribute="bottom" id="Sx9-0E-dNb"/>
+                <constraint firstItem="qRa-0U-AVb" firstAttribute="top" secondItem="aVy-YQ-Pbv" secondAttribute="bottom" constant="8" id="Xr8-RC-7IV"/>
+                <constraint firstItem="b2c-q7-oYR" firstAttribute="top" secondItem="IXA-pv-Mts" secondAttribute="bottom" id="Y2s-Nf-S0s"/>
+                <constraint firstAttribute="trailing" secondItem="qRa-0U-AVb" secondAttribute="trailing" constant="13" id="afb-Y1-k5C"/>
+                <constraint firstItem="vHe-mb-xg7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="gG0-XG-lBX"/>
+                <constraint firstItem="b2c-q7-oYR" firstAttribute="centerX" secondItem="IXA-pv-Mts" secondAttribute="centerX" id="gW2-2a-8bh"/>
+                <constraint firstAttribute="trailing" secondItem="uBv-EC-fCl" secondAttribute="trailing" id="kZZ-fA-Bcx"/>
+                <constraint firstItem="qRa-0U-AVb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="lth-d6-C3B"/>
+                <constraint firstItem="aVy-YQ-Pbv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="p81-fV-BaJ"/>
+                <constraint firstItem="vHe-mb-xg7" firstAttribute="top" secondItem="Ybu-Rb-F1O" secondAttribute="bottom" constant="8" id="qQD-Fs-X0u"/>
+                <constraint firstAttribute="trailing" secondItem="vHe-mb-xg7" secondAttribute="trailing" constant="13" id="ye3-eC-2Ah"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="203.5" y="356.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="empty.png" width="600" height="600"/>
+        <image name="next.png" width="32" height="32"/>
+        <image name="pause.png" width="32" height="32"/>
+        <image name="previous.png" width="32" height="32"/>
+    </resources>
+</document>
