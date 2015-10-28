@@ -7,4 +7,4 @@
 可以读取LRC歌词
 效果图
 
-！[image]()
+![image](https://github.com/RyomaLiu/XMSampleMP/blob/master/preview/preview.gif)
